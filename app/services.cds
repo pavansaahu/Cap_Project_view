@@ -1,0 +1,3 @@
+
+
+using from './productdetailsapplication/annotations';
