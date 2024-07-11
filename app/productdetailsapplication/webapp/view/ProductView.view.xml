@@ -1,0 +1,70 @@
+<mvc:View controllerName="com.productdetailsapplication.productdetailsapplication.controller.ProductView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   	<IconTabBar >
+		<items>
+			<IconTabFilter key="Products" text="PRODUCTS" icon="sap-icon://hint" >
+
+               <Table id="table" items="{/Products}">
+                    <columns>
+                        <Column>
+                            <Text text="ID" />
+                        </Column>
+                        <Column>
+                            <Text text="PRODUCT NAME" />
+                        </Column>
+                        <!-- Add more columns as needed -->
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{ID}" />
+                                <Text text="{ProductName}" />
+                                <!-- Ensure binding paths match your OData service -->
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+
+
+
+              </IconTabFilter>
+         
+			<IconTabFilter key="Characteristics" text="CHARACTERISTICS"  icon="sap-icon://hint" >
+             <Table id="charTable" items="{/Characteristics}">
+                    <columns>
+                        <Column>
+                            <Text text="ID" />
+                        </Column>
+                        <Column>
+                            <Text text="PRODUCT" />
+                        </Column>
+                        <Column>
+                            <Text text="CHARACTERISTICSNAME" />
+                        </Column>
+                        <Column>
+                            <Text text="CHARACTERISTICSVALUE" />
+                        </Column>
+                        <!-- Add more columns as needed -->
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{ID}" />
+                                <Text text="{product}" />
+                                <Text text="{characteristicName}" />
+                                <Text text="{characteristicValue}" />
+                               
+                                <!-- Ensure binding paths match your OData service -->
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+			</IconTabFilter>
+		</items>
+
+        
+
+
+	</IconTabBar>
+</mvc:View>

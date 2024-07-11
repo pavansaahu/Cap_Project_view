@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Wed Jul 10 2024 10:11:24 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Thu Jul 11 2024 10:10:40 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.14.1|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -12,7 +12,7 @@
 |**Application Title**<br>Product Details Application|
 |**Namespace**<br>com.productdetailsapplication|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.125.1|
+|**UI5 Version**<br>1.126.0|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|

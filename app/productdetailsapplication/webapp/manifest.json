@@ -13,15 +13,15 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.14.1",
-      "toolsId": "32436406-4711-48f4-b425-03384cecd6e8"
+      "toolsId": "85f50bb2-760d-4896-a9d4-66252dfb525a"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/catalog/",
+        "uri": "/odata/v2/catalog/",
         "type": "OData",
         "settings": {
           "annotations": [],
-          "odataVersion": "4.0"
+          "odataVersion": "2.0"
         }
       }
     }
@@ -45,7 +45,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.125.1",
+      "minUI5Version": "1.126.0",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -97,20 +97,20 @@
       },
       "routes": [
         {
-          "name": "RouteListPage",
+          "name": "RouteProductView",
           "pattern": ":?query:",
           "target": [
-            "TargetListPage"
+            "TargetProductView"
           ]
         }
       ],
       "targets": {
-        "TargetListPage": {
+        "TargetProductView": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "ListPage",
-          "viewName": "ListPage"
+          "viewId": "ProductView",
+          "viewName": "ProductView"
         }
       }
     },
