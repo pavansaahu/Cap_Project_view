@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    id="createFragmentId">
+    <Dialog title="Create Product and Characteristics" draggable="true" resizable="true"  >
+        <content>
+            <VBox>
+                <Label text="Product Name" />
+                <Input id="productNameInput" />
+
+                <Label text="Characteristic Name" />
+                <Input id="characteristicNameInput" />
+
+                <Label text="Characteristic Value" />
+                <Input id="characteristicValueInput" />
+            </VBox>
+        </content>
+        <beginButton>
+            <Button text="Submit" press="onSubmitCreate" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onCancelCreate" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

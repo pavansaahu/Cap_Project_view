@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v2/catalog/",
+        "uri": "/v2/odata/v4/catalog/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -68,7 +68,7 @@
           "bundleName": "com.productdetailsapplication.productdetailsapplication.i18n.i18n"
         }
       },
-      "": {
+      "oModel": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {
