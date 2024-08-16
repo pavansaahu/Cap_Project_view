@@ -1,14 +1,16 @@
-using {myapp as pdb} from '../db/productdata-model';
+using {interaction} from '../db/productdata-model';
+using { V_INTERACTION } from '../db/productdata-model';
+
 
 service CatalogService1 {
-    entity Products              as projection on pdb.Product;
-    entity MasterCharacteristics as projection on pdb.MasterData;
-    entity SubCategories         as projection on pdb.subCategoriesData;
-    entity Characteristics       as projection on pdb.Characteristic;
-    entity SubCharacteristics    as projection on pdb.SubCharacteristic;
-    entity CharacteristicValues  as projection on pdb.CharacteristicValue;
-    entity HierarchicalData      as projection on pdb.HierarchicalData;
-    
+    entity Products              as projection on interaction.Product;
+    entity MasterCharacteristics as projection on interaction.MasterData;
+    entity SubCategories         as projection on interaction.subCategoriesData;
+    entity Characteristics       as projection on interaction.Characteristic;
+    entity SubCharacteristics    as projection on interaction.SubCharacteristic;
+    entity CharacteristicValues  as projection on interaction.CharacteristicValue;
+    entity HierarchicalData      as projection on interaction.HierarchicalData;
+    entity Interactions          as projection on V_INTERACTION;
     function GetHierarchicalData() returns String;
 
 // function GetHierarchicalData() returns array of HierarchicalDataType;
